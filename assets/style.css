@@ -57,6 +57,10 @@ html {
 
 /*PARTE CENTRALE*/
 
+section {
+    height: 100vh;
+}
+
 .container {
     margin-inline: auto;
     padding: 0.5rem;
@@ -83,6 +87,7 @@ section .container {
     left: 0;
     bottom: 3.3%;
 }
+
 /*PARTE FINALE*/
 
 .nav-bot {
@@ -90,6 +95,7 @@ section .container {
     left: 0;
     bottom: 0;
     right: 0;
+    height: 6em;
     gap: 1rem;
     padding: 1rem;
     z-index: 99;
