@@ -9,7 +9,9 @@
 /*GENERAL SETTINGS*/
 
 html {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin-top: 4em;
 }
 
 /*PARTE INIZIALE*/
@@ -25,13 +27,14 @@ html {
     gap: 1rem;
     padding: 1rem;
     z-index: 99;
+    height: 2em;
 }
 
 .nav-top .big-btn {
     display: inline;
     background-color: #4A4A4A;
     color: white;
-    padding: 5px 10px;
+    padding-right: 5px;
     border-radius: 3em;
     text-decoration: none;
 }
@@ -56,7 +59,7 @@ html {
 
 .container {
     margin-inline: auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 section .container {
@@ -69,16 +72,16 @@ section .container {
     position: relative;
     height: 100%;
     width: 100%;
-    margin: .5rem;
+    margin: .2rem;
 }
 
 .contents {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     color: rgb(255, 255, 255);
     padding: 2px 2px 2px 2px;
     left: 0;
-    bottom: 6.2%;
+    bottom: 3.3%;
 }
 /*PARTE FINALE*/
 
