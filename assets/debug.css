@@ -1,0 +1,20 @@
+.nav-top {
+    /* background-color: rgb(255, 0, 0); */
+    height: 4rem;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}
+
+.nav-bot {
+    background-color: blue;
+    height: 4rem;
+}
+
+
