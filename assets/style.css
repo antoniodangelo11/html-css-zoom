@@ -10,7 +10,6 @@
 
 html {
     background-color: black;
-    margin-top: 4em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,7 +26,7 @@ html {
     gap: 1rem;
     padding: 1rem;
     z-index: 99;
-    height: 2em;
+    height: 3em;
 }
 
 .nav-top .big-btn {
@@ -59,26 +58,29 @@ html {
 
 
 .container {
+    height: calc(100vh / - 3em - 5em);
     margin: auto;
-    padding: 0.5rem;
 }
 
 section .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80vh;
     width: 100%;
-    overflow: scroll;
     overflow-x: hidden;
     
 }
 
-.img-container {
+.card {
     position: relative;
+    flex: 0 1 auto;
+}
+
+.img-container {
+    padding: 0.5rem;
     height: 100%;
     width: 100%;
-    margin: .2rem;
+    object-fit: cover;
 }
 
 .contents {
@@ -86,8 +88,8 @@ section .container {
     background-color: rgba(255, 255, 255, 0.2);
     color: rgb(255, 255, 255);
     padding: 2px 2px 2px 2px;
-    left: 0;
-    bottom: 3.3%;
+    left: 4;
+    bottom: 4%;
 }
 
 /*PARTE FINALE*/
