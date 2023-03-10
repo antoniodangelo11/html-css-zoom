@@ -68,7 +68,7 @@ section .container {
     flex-wrap: wrap;
     justify-content: center;
     height: 80vh;
-    width: 90%;
+    width: 100%;
     overflow: scroll;
     overflow-x: hidden;
     
@@ -103,8 +103,8 @@ section .container {
     bottom: 0;
     right: 0;
     height: 5em;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1em;
+    padding: 1em;
     z-index: 99;
 }
 
@@ -126,6 +126,9 @@ i > div {
 }
 
 .nav-bot-right > span {
+    font-size: small;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2em;
     color: red;
 }
 
@@ -135,5 +138,9 @@ i > div {
 }
 
 #green {
-    color: green;
+    color: rgb(0, 184, 0);
+}
+
+#share {
+    color: rgb(255, 255, 255);
 }
