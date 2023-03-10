@@ -103,53 +103,66 @@ main {
 
 /*PARTE FINALE*/
 
-footer {
+
+.nav-bot-container {
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    justify-content: space-between;
+    overflow-x: hidden;
     height: 5rem;
 }
 
-.nav-bot-container {
-    background-color: #222222;
-    color: rgb(255, 255, 255);
+.nav-bot-left {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
-    padding: .8rem;
 }
 
-.nav-bot-left, .nav-bot-center {
+.btn-dash {
     display: flex;
-    cursor: pointer;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.btn-dash:hover {
+	cursor: pointer;
+}
+
+.btn-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 .icon-f {
+	font-size: 1.5rem;
+}
+
+.nav-bot-center {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-i > div {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    margin: 10px;
+.nav-bot-right {
+    display: flex;
 }
 
-.nav-bot-right > span {
-    font-size: small;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 2em;
-    color: red;
+.nav-bot-right .btn {
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.fa-chevron-up {
-    margin-top: 5px;
-    margin-right: 5px;
+.btn-share .icon-f {
+	color: rgb(75, 200, 0);
 }
 
-#green {
-    color: rgb(0, 184, 0);
+.btn-end {
+	padding-inline: 1rem;
+	color: rgb(255, 0, 0);
+	border-radius: 0;
 }
 
-#share {
-    color: rgb(255, 255, 255);
+.btn-end:hover {
+    cursor: pointer;
 }
