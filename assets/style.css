@@ -9,24 +9,26 @@
 /*GENERAL SETTINGS*/
 
 html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+	color: white;
 }
 
 /*PARTE INIZIALE*/
 
+header {
+    height: 3rem;
+}
+
+
 .nav-top {
     justify-content: flex-end;
-    position: fixed;
     align-items: center;
-    left: 0;
-    top: 0;
-    right: 0;
     display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    z-index: 99;
-    height: 3em;
+    padding: 0 1rem;
 }
 
 .nav-top .big-btn {
@@ -57,30 +59,35 @@ html {
 /*PARTE CENTRALE*/
 
 
-.container {
-    height: calc(100vh / - 3em - 5em);
-    margin: auto;
+main {
+    height: calc(100vh - 3rem - 5rem);
+    overflow-y: auto;
 }
 
-section .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    overflow-x: hidden;
+.container {
+    margin-inline: auto;
+	padding: 2rem 1rem 3rem;
     
 }
 
-.card {
-    position: relative;
-    flex: 0 1 auto;
+.cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: .5rem;
+	row-gap: 1rem;
 }
 
-.img-container {
-    padding: 0.5rem;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.card {
+	position: relative;
+}
+
+.card img {
+    display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .contents {
@@ -94,20 +101,18 @@ section .container {
 
 /*PARTE FINALE*/
 
+footer {
+    height: 5rem;
+}
+
 .nav-bot-container {
     background-color: #222222;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 5em;
     gap: 1em;
-    padding: 1em;
-    z-index: 99;
+    padding: .8rem;
 }
 
 .nav-bot-left, .nav-bot-center {
